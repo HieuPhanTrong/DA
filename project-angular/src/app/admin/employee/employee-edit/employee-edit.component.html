@@ -1,0 +1,133 @@
+<h2 style="color: blue;">Edit new a Employee</h2>
+
+<form action="" method="POST" [formGroup]="proAdd"  >
+  <legend>Form title</legend>
+
+  <div class="form-group">
+    <label for="">Tên nhân viên</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="name"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.name.errors">
+      <small *ngIf="f.name.errors?.['required']"
+        >Tên nhân viên không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Image nhân viên</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="imgUrl"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.imgUrl.errors">
+      <small *ngIf="f.imgUrl.errors?.['required']"
+        >Image không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Giới tính</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="gender"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.gender.errors">
+      <small *ngIf="f.gender.errors?.['required']"
+        >Giới tính không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Số điện thoại</label>
+    <input
+      type="number"
+      class="form-control"
+      formControlName="phone"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.phone.errors">
+      <small *ngIf="f.phone.errors?.['required']"
+        >Số điện thoại không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Địa chỉ</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="address"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.address.errors">
+      <small *ngIf="f.address.errors?.['required']"
+        >Địa chỉ không được bỏ trống</small
+      >
+      <small *ngIf="f.address.errors?.['min']"
+        >Đại chỉ </small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      formControlName="email"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.email.errors">
+      <small *ngIf="f.email.errors?.['required']"
+        >Email không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <!-- <div class="radio">
+    <label for="">Danh mục</label>
+
+    <select formControlName="CategoryId" id="input" class="form-control">
+      <option value="">Chọn một</option>
+      <option *ngFor="let cat of cats" value="{{ cat.Id }}">
+        {{ cat.Name }}
+      </option>
+    </select>
+    <div *ngIf="submited && f.CategoryId.errors">
+      <small *ngIf="f.CategoryId.errors?.['required']"
+        >Tên danh mục không được bỏ trống</small
+      >
+    </div>
+  </div> -->
+
+  <!-- <div>
+    <label for="">
+      <input type="radio" formControlName="Status" value="Published" />Published
+    </label>
+    <label for="">
+      <input type="radio" formControlName="Status" value="Private" />Private
+    </label>
+  </div> -->
+
+  <button type="submit" (click)="onSubmit()" class="btn btn-primary">
+    Submit
+  </button>
+</form>

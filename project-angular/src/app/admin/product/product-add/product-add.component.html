@@ -1,0 +1,117 @@
+<h2 style="color: blue;">Add new a Product</h2>
+
+<form action="" method="POST" [formGroup]="proAdd"  >
+  <legend>Form title</legend>
+
+  <div class="form-group">
+    <label for="">Tên sản phẩm</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="name"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.name.errors">
+      <small *ngIf="f.name.errors?.['required']"
+        >Tên sản phẩm không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Image sản phẩm</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="imgUrl"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.imgUrl.errors">
+      <small *ngIf="f.imgUrl.errors?.['required']"
+        >Image không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Giá sản phẩm</label>
+    <input
+      type="number"
+      class="form-control"
+      formControlName="price"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.price.errors">
+      <small *ngIf="f.price.errors?.['required']"
+        >Giá sản phẩm không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Giá khuyến mãi</label>
+    <input
+      type="number"
+      class="form-control"
+      formControlName="saleprice"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.price.errors">
+      <small *ngIf="f.saleprice.errors?.['required']"
+        >Giá khuyến mãi không được bỏ trống</small
+      >
+      <small *ngIf="f.saleprice.errors?.['min']"
+        >Giá khuyến mãi </small
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="">Nội dung</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="description"
+      id=""
+      placeholder="Input field"
+    />
+    <div *ngIf="submited && f.description.errors">
+      <small *ngIf="f.description.errors?.['required']"
+        >Nội dung không được bỏ trống</small
+      >
+    </div>
+  </div>
+
+  <!-- <div class="radio">
+    <label for="">Danh mục</label>
+
+    <select formControlName="CategoryId" id="input" class="form-control">
+      <option value="">Chọn một</option>
+      <option *ngFor="let cat of cats" value="{{ cat.Id }}">
+        {{ cat.Name }}
+      </option>
+    </select>
+    <div *ngIf="submited && f.CategoryId.errors">
+      <small *ngIf="f.CategoryId.errors?.['required']"
+        >Tên danh mục không được bỏ trống</small
+      >
+    </div>
+  </div> -->
+
+  <!-- <div>
+    <label for="">
+      <input type="radio" formControlName="Status" value="Published" />Published
+    </label>
+    <label for="">
+      <input type="radio" formControlName="Status" value="Private" />Private
+    </label>
+  </div> -->
+
+  <button type="submit" (click)="onSubmit()" class="btn btn-primary">
+    Submit
+  </button>
+</form>

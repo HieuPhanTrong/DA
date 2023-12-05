@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="cover-page">
+    <img src="https://file.hstatic.net/200000265901/article/628fc4d2e1b34_663ada69b5f34b1996ace4bbab07d62d.jpg" alt="" style="max-width: 100%; max-height: 340px; justify-content: center; margin-bottom: 20px;">
+  </div>
+  <section id="product-list">
+    <div class="container">
+      <div class="wrapper">
+        <owl-carousel-o [options]="customOptions">
+
+          <ng-container *ngFor="let item of datas">
+            <ng-template class="slide" carouselSlide >
+              <div [id]="item.id">
+                <img [src]="item.imgUrl" [alt]="item.name" [title]="item.name">
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+      <div class="row py-3">
+        <div class="col-3" *ngFor="let item of datas">
+          <div class="product-item">
+            <div class="product-image">
+              <img src="{{ item.imgUrl }}" alt="{{ item.name }}"/>
+            </div>
+            <div class="product-title">{{ item.name }}</div>
+            <div class="description">
+              {{ item.price}}
+            </div>
+            <p class="card-text"></p>
+          <!-- <div class="product-description">{{ item.description }}</div>
+          <div class="product-price">{{ item.price }} VND</div>
+          <div class="product-saleprice">{{ item.saleprice }}g</div>
+          <div>
+            <button class="add-to-cart-button ">Thêm vào giỏ hàng</button>
+        </div> -->
+        <div>
+          <a routerLink="chi-tiet/{{item.id}}" class="add-to-cart-button ">Xem chi tiết</a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "Ao polo",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 300000,
+      "saleprice": 250000,
+      "description": "Resize the browser width and the image will change at 600px and 1500px."
+    },
+    {
+      "id": 5,
+      "name": "Ao polo 2",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 4000,
+      "saleprice": 200,
+      "description": "Resize the browser width and the image will change at 600px and 1500px."
+    },
+    {
+      "id": 6,
+      "name": "ao polo 3",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 300,
+      "saleprice": 200,
+      "description": "giuaih iuhawoiehksaoi wqefgiufew"
+    },
+    {
+      "id": 7,
+      "name": "Ao thun polo",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 300,
+      "saleprice": 200,
+      "description": "tao ve dep"
+    },
+    {
+      "name": "Áo polo dep",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 300000,
+      "saleprice": 200000,
+      "description": "jgdsj ídhkjfd",
+      "id": 8
+    },
+    {
+      "name": "Áo polo",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0128/ao-thun-nam-polo-ghi-tre-trung-axh-172-0.jpg",
+      "price": 500000,
+      "saleprice": 400000,
+      "description": "Với sự tinh tế và chuyên nghiệp trong từng tác phẩm, bộ sưu tập này hướng đến việc thể hiện vẻ đẹp và phong cách của quần áo thông qua những hình ảnh sắc nét nhất. Mỗi mẫu quần áo trong bộ sưu tập đều được thiết kế tỉ mỉ, độc đáo và có sự kết hợp hài hòa giữa màu sắc, kiểu dáng và chất liệu, tạo nên những bộ trang phục tuyệt đẹp và đại diện cho cá nhân của mỗi người.",
+      "id": 9
+    },
+    {
+      "name": "Áo Polo đen nhám",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0126/ao-thun-polo-den-the-thao-dep-axh-169.jpg",
+      "price": 400,
+      "saleprice": 35,
+      "description": "Bộ sưu tập này không chỉ mang đến những mẫu quần áo cho dân văn phòng hay những buổi dạo chơi cuối tuần, mà còn bao gồm cả những thiết kế đặc biệt dành cho các sự kiện quan trọng như tiệc cưới, bữa tiệc thường niên hay buổi ra mắt sản phẩm mới. Với những hình ảnh đẹp hoàn hảo đạt độ phân giải 4K, người dùng sẽ có cái nhìn toàn diện về từng chi tiết của từng mẫu quần áo và có thể lựa chọn phù hợp với sở thích và phong cách cá nhân.",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "name": "Áo Polo xanh đậm",
+      "imgUrl": "https://louiskimmi.com/wp-content/uploads/2021/05/Ao-thun-nam-BurBerry-du-mau-3.jpg",
+      "price": 300000,
+      "saleprice": 200000,
+      "description": "Không chỉ đơn thuần là một bộ sưu tập hình ảnh, mỗi tác phẩm trong bộ sưu tập còn mang đậm thông điệp nghệ thuật và sự tinh tế. Từ những bức ảnh với hiệu ứng ánh sáng đầy màu sắc cho đến những bức ảnh chụp từ góc nhìn độc đáo, bộ sưu tập này thực sự là một bước đột phá đầy cảm hứng trong lĩnh vực nghệ thuật thời trang."
+    },
+    {
+      "name": "ao",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "price": 5000,
+      "saleprice": 2000,
+      "description": "dep",
+      "id": 12
+    }
+  ]
+}

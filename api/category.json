@@ -1,0 +1,19 @@
+{
+    "category": [
+      {
+        "id": 1,
+        "Name": "Áo nam",
+        "Status": 1
+      },
+      {
+        "id": 2,
+        "Name": "Quần âu",
+        "Status": 0
+      },
+      {
+        "id": 2,
+        "Name": "Áo thun",
+        "Status": 1
+      }
+    ]
+}

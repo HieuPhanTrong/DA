@@ -1,0 +1,57 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="margin-bottom: 15px">
+  <div class="container">
+      <a class="navbar-brand" href="/">Navbar</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a style="margin-left: 720px;" class="nav-link" routerLink="/category">Giỏ hàng <span style="color: red;">{{ totalQuantity}}</span><span class="sr-only">(current)</span></a>
+            </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin Manager</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" routerLink="/admin/product">Product Manager</a>
+                      <a class="dropdown-item" routerLink="/admin/employee">Employee Manager</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+</header>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+    <div class="row">
+      <div class="boxcenter2">
+        <div class="boxfooter1 color mrr2">
+          <h4>Follow Us</h4>
+        </div>
+        <div class="boxfooter2 color mrr2">
+          <h4>Hướng dẫn</h4>
+          <div class="address"><a href="">Điều khoản</a></div>
+          <div class="address"><a href="">Hướng dẫn MH</a></div>
+          <div class="address"><a href="">Chính sách </a></div>
+          <div class="address"><a href="">Bảo mật thông tin</a></div>
+        </div>
+        <div class="boxfooter3 color">
+          <h4>Contact Us</h4>
+          <div class="address">291 Tây Sơn, Quang Trung, Quy Nhơn, Bình Định</div>
+          <div class="address">291 Tây Sơn, Quang Trung, Quy Nhơn, Bình Định</div>
+          <div class="address">291 Tây Sơn, Quang Trung, Quy Nhơn, Bình Định</div>
+        </div>
+      </div>
+    </div>
+    <div class="row-textcenter-color">
+      © Copyright 2023 Top 10 Quy Nhơn - Hotline: 096 1118 365
+    </div>
+</footer>
+

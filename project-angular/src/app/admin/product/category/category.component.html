@@ -1,0 +1,46 @@
+<h3>Giỏ hàng</h3>
+
+<div *ngIf="carts.length">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Ảnh</th>
+        <th>Tên SP</th>
+        <th>Giá SP</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cart of carts; let i = index">
+          <td>{{i + 1}}</td>
+          <td><img src="{{cart.imgUrl}}" alt="" width="60px"></td>
+          <td>{{cart.name}}</td>
+          <td>{{cart.price}}</td>
+          <td>
+            <button style="color: red;" (click)="giamSL(i, cart.quantity)">-</button>
+            <input (change)="updateQuantity(i, $event)" type="number" [value]="cart.quantity" style="width: 60px; text-align: center;">
+            <button style="color: red;"(click)="tangSL(i, cart.quantity)">+</button>
+          </td>
+          <td>{{subTotal(cart)}}</td>
+          <td>
+            <button class="btn btn-sm btn-danger" (click)="removecart(i)">Xoá</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <div class="text-center">
+    <h3 class="total-quantity"> <span class="total-quantity-value">{{ totalQuantity }} </span></h3>
+    <h3 class="total-price"> <span class="total-price-value">{{ totalPrice }} VND</span></h3>
+    <a routerLink="/" class="btn btn-sm btn-primary">Tiếp tục mua hàng</a>
+    <a class="btn btn-sm btn-danger" (click)="onClearCart()">Xoá hết giỏ hàng</a>
+  </div>
+</div>
+
+<div class="alert alert-danger" *ngIf="carts.length == 0">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+  <strong> Giỏ hàng rỗng </strong> <a routerLink="/">click vào đây</a> để tiếp tục mua hàng ...
+</div>

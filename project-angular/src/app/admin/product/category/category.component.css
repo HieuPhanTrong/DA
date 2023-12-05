@@ -1,0 +1,27 @@
+.total-price {
+  font-size: 18px;
+}
+
+.total-price .total-price-value {
+  color: red;
+}
+
+.total-price::before {
+  content: "Tổng thanh toán: ";
+  color: rgba(13, 14, 13, 0.89);
+}
+
+.total-quantity {
+  font-size: 18px;
+}
+
+.total-quantity .total-quantity-value {
+  color: red;
+}
+
+
+.total-quantity::before {
+  content: "Tổng số lượng: ";
+  color: rgba(9, 10, 9, 0.89);
+}
+

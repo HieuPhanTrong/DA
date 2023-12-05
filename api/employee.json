@@ -1,0 +1,40 @@
+{
+  "employee": [
+    {
+      "id": 2,
+      "name": "nguyen van a",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "gender": "nam",
+      "phone": 1234567,
+      "address": "12 nguyen du",
+      "email": "nguyenvana@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "nguyen van a",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "gender": "nam",
+      "phone": 1234567,
+      "address": "12 nguyen du",
+      "email": "nguyenvana@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "a",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "gender": "nam",
+      "phone": 1234567345,
+      "address": "23 bg",
+      "email": "a@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Phan Trọng Hiếu",
+      "imgUrl": "https://zeanus.vn/upload/product/zn-0127/ao-thun-nam-polo-trang-tre-trung-axh-171.jpg",
+      "gender": "Nam",
+      "phone": 869163547,
+      "address": "12 Nguyễn Du 12345",
+      "email": "phantronghieubd2001@gmail.com"
+    }
+  ]
+}

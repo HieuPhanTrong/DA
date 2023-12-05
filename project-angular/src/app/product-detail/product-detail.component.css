@@ -1,0 +1,54 @@
+h4 {
+  color: red;
+}
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: solid 2px #007bff;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.product-title {
+  font: bold 20px/1.5 Arial, sans-serif;
+  font-family: "Times New Roman", serif;
+  font-size: 25px;
+  color: #344fe7ce;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.product-title:hover {
+  color: #1c1fe7;
+}
+
+.product-price {
+  color: #fff;
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: rgb(247, 71, 65);
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.product-price:hover {
+  background-color: #ee2626;
+}
+
+.description{
+  content: "\f0f3";
+  font-family: "Font Awesome";
+  font-size: 20px;
+  margin-right: 5px;
+  font-style: normal;
+  color: #353636;
+  padding: 5px, 9px ;
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,24 @@
+<div class="row py-5">
+  <div class="col-md-5">
+    <img [src]="product.imgUrl" class="w-100">
+  </div>
+  <div class="col-md-7">
+    <h3>{{today | date:"dd-MM-yyyy"}}</h3>
+    <h2 class="product-title">{{product.name | uppercase}}</h2>
+    <!-- <h4><s class="product-price">Price: {{product.price | currency:"":""}} VND</s> - Sale price: {{product.saleprice |currency:"":""}} VND</h4> -->
+    <h4>
+      <s class="product-price">Price: {{ product.price | currency:'VND':'symbol-narrow' }}</s>
+      - Sale price: {{ product.saleprice | currency:'VND':'symbol-narrow' }}
+    </h4>
+    <p class="description">{{product.description}}</p>
+
+    <form action="" method="POST" class="form-inline" role="form" [formGroup]="cartForm">
+      <div class="form-group">
+        <label class="sr-only" for="">label</label>
+      </div>
+      <!-- <input type="number" class="form-control" id="" placeholder="Số lượng"> -->
+      <button class="add-to-cart-button " (click)="onAddTocart(product)">Thêm vào giỏ hàng</button>
+    </form>
+
+  </div>
+</div>
